@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="stylesheet" href="index.css">
+	 <title>Easy Calculator</title>
+</head>
+
+
+<body>
+	
+<div id="cuerpo">
+                <section id="pantalla">
+					                  <p id="salida">0</p>
+                </section>
+                <section id="separador">
+					                   <div id="sep"></div>
+				</section>
+
+<form>
+<table >
+
+<tr>
+    <td><input type="button" value="7" onclick="display('7')"></td>
+    <td><input type="button" value="8" onclick="display('8')"></td>
+    <td><input type="button" value="9" onclick="display('9')"></td>
+    <td><input id="operador"  type="button" value="/" onclick="display('/')"></td>
+</tr>
+
+<tr>
+    <td><input type="button" value="4" onclick="display('4')"></td>
+    <td><input type="button" value="5" onclick="display('5')"></td>
+    <td><input type="button" value="6" onclick="display('6')"></td>
+    <td><input id="operador" type="button" value="*" onclick="display('*')"></td>
+ </tr>
+
+<tr>
+   <td><input type="button" value="1" onclick="display('1')"></td>
+   <td><input type="button" value="2" onclick="display('2')"></td>
+   <td><input type="button" value="3" onclick="display('3')"></td>
+   <td><input id="operador" type="button" value="-" onclick="display('-')"></td>
+</tr>
+
+
+
+<tr>
+   <td><input type="button" value="0" onclick="display('0')"></td>
+   <td><input id="igual" type="button" value="=" onclick="igualar()"></td>
+   <td><input id="operador" type="button" value="⇐" onclick="borrar()"></td>
+   <td><input id="operador"    type="button" value="+" onclick="display('+')"></td>
+</tr>
+
+<tr>
+   <td><input type="button" value="AC" onclick="reiniciar()"></td>
+   <td><input type="button" value="." onclick="display('.')"></td>
+</tr>
+
+</table>
+</form>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+
+
+
+
+
+</html>
